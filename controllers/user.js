@@ -15,4 +15,11 @@ module.exports = {
        .then(user => res.status(201).send(user))
        .catch(error => res.status(400).send(error))
     },
+
+    isAuth(req, res) {
+        return User.findOne({ where: { userName: req.body.userName }})
+       .then (user => res.status(201).send(user))
+       .catch(error => res.status(400).send(error))
+    }
+
 };

@@ -10,7 +10,7 @@ module.exports = (app) => {
     //get a user by id
     app.get('/api/user', userController.findByUserName);
     //create a tweet
-    app.post('/api/tweet', tweetController.createTweet)
+    app.post('/api/tweet',userController.isAuth, tweetController.createTweet)
     //create a tweet
-    app.get('/api/tweet', tweetController.getTweetById)
+    app.get('/api/tweet',userController.isAuth ,tweetController.getTweetById)
 }

@@ -3,7 +3,7 @@
     "username": "nicolas",
     "password": "nic2015!",
     "database": "twitterclone",
-    "host": "dbtest.c1cpeyecukiq.us-east-1.rds.amazonaws.com",
+    "host": "twitterclone.c1cpeyecukiq.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
